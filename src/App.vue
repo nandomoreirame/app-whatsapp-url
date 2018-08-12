@@ -1,17 +1,22 @@
 <template>
-  <div class="container">
+  <div class="App">
     <navbar/>
-    <router-view/>
+    <main class="container">
+      <router-view/>
+    </main>
+    <app-footer/>
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar.vue'
+import AppFooter from '@/components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    AppFooter
   }
 }
 </script>
@@ -23,6 +28,7 @@ body
   height 100%
 
 html
+  font-size 16px
   font-family sans-serif
   -webkit-text-size-adjust 100%
   -ms-text-size-adjust 100%
@@ -35,6 +41,7 @@ body
   font-family 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
+  font-size 1rem
   color rgba(#2c3e50, .9)
   margin 0
 
