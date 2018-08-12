@@ -1,7 +1,7 @@
 <template>
   <footer>
     <small>
-      ♥︎ <a href="https://github.com/nandomoreirame/whatsapp-url" target="_blank">Open source</a> ⏤
+      ♥︎ <a href="https://github.com/nandomoreirame/app-whatsapp-url" target="_blank">Open source</a> ⏤
       by <a href="https://nandomoreira.me" target="_blank">nandomoreira.me</a>
     </small>
   </footer>
