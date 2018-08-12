@@ -1,4 +1,4 @@
-# app-whatsapp-url
+# [Whatsapp url](https://whatsapp-url.netlify.com/)
 
 > App Whatsapp URL - With Vuejs
 
@@ -10,6 +10,8 @@ cd app-whatsapp-url/
 yarn install
 yarn serve
 ```
+
+open [localhost:8080](http://localhost:8080/)
 
 ## License
 
