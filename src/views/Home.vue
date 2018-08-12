@@ -50,7 +50,7 @@ export default {
     changeUrl () {
       const hasCode = this.phone.length > 11
       const phone = `${ (!hasCode) ? this.code : '' }${this.phone.replace('+', '')}`
-      this.url = whatsappUrl({ phone, text: this.text, openWeb: !this.isWeb })
+      this.url = whatsappUrl({ phone, text: this.text, isWeb: this.isWeb })
     }
   }
 }

@@ -7013,9 +7013,9 @@ websocket-extensions@>=0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
 
-whatsapp-url@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/whatsapp-url/-/whatsapp-url-0.0.1.tgz#f06b2e1812e70407cb059d6ae70b9410ff585f06"
+whatsapp-url@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/whatsapp-url/-/whatsapp-url-0.0.3.tgz#b8355bfa3236a17a455c08789f07273fa7cfc1c8"
 
 when@~3.6.x:
   version "3.6.4"
