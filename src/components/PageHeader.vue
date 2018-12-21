@@ -1,6 +1,6 @@
 <template>
-  <header class="PageHeader">
-    <h1 class="PageHeader__title" v-text="pageTitle"/>
+  <header>
+    <h1 v-text="pageTitle"/>
   </header>
 </template>
 
@@ -17,10 +17,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.PageHeader
-  border-bottom 1px solid #e0e0e0
-  padding-bottom 15px
-  margin-bottom 15px
-  &__title
-    margin 0
+header
+  padding-bottom 1.875rem /* 30/16 */
+h1
+  margin 0
+  letter-spacing -0.05rem
 </style>

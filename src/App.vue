@@ -78,13 +78,12 @@ a
 
 hr
   border none
-  border-bottom 1px solid #e0e0e0
-  margin 30px 0
+  border-bottom .0625rem /* 1/16 */ solid rgba(#2c3e50, .1)
+  margin 1.25rem /* 20/16 */ 0
 
 .container
   max-width 22.5rem
   margin-right auto
   margin-left auto
-  padding-right 15px
-  padding-left 15px
+  padding 3.75rem /* 60/16 */ .9375rem /* 15/16 */ 1.875rem /* 30/16 */
 </style>

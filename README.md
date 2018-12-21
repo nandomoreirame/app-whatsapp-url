@@ -1,4 +1,4 @@
-# [Whatsapp url](https://whatsapp-url.netlify.com/)
+# [WhatsApp URL](https://whatsapp-url.netlify.com/)
 
 > App Whatsapp URL - With Vuejs
 
