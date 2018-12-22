@@ -1,5 +1,5 @@
 <template>
-  <section class="Home">
+  <section>
     <page-header :pageTitle="`WhatsApp URL`"/>
     <whatsapp-form/>
   </section>

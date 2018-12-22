@@ -1,7 +1,7 @@
 <template>
-  <div class="App">
+  <div class="app">
     <navbar/>
-    <main class="container">
+    <main>
       <router-view/>
     </main>
     <app-footer/>
@@ -20,6 +20,14 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+main
+  max-width 22.5rem
+  margin-right auto
+  margin-left auto
+  padding 3.75rem /* 60/16 */ .9375rem /* 15/16 */ 1.875rem /* 30/16 */
+</style>
 
 <style lang="stylus">
 html,
@@ -80,10 +88,4 @@ hr
   border none
   border-bottom .0625rem /* 1/16 */ solid rgba(#2c3e50, .1)
   margin 1.25rem /* 20/16 */ 0
-
-.container
-  max-width 22.5rem
-  margin-right auto
-  margin-left auto
-  padding 3.75rem /* 60/16 */ .9375rem /* 15/16 */ 1.875rem /* 30/16 */
 </style>

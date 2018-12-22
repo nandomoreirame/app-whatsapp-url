@@ -2,7 +2,7 @@
 	<div>
     <div class="form-group">
       <label>Telefone</label>
-      <vue-tel-input v-model="phone" @onInput="changeUrl"/>
+      <vue-tel-input v-model="phone" @onInput="onInput"/>
     </div>
     <div class="form-group">
       <label for="WhatsappText">Mensagem</label>
@@ -10,7 +10,7 @@
     </div>
     <hr/>
     <div class="form-group">
-      <whatsapp-button :url="url" text="Fale comigo no WhatsApp!"/>
+      <whatsapp-button :url="url" text="Ok, pode enviar a mensagem"/>
     </div>
 	</div>
 </template>
@@ -24,10 +24,11 @@ const whatsappUrl = require('whatsapp-url')
 export default {
   data () {
     return {
-      code: '55',
-      phone: '41984401163',
+      code: `55`,
+      phone: `41984401163`,
+      urlPhone: `5541984401163`,
       text: `It's me Mario!`,
-      url: ''
+      url: ``
     }
   },
   components: {
@@ -37,13 +38,18 @@ export default {
     this.changeUrl()
   },
   methods: {
+    changeWhatsappUrl (phoneNumber) {
+      const phone = phoneNumber.replace(/\s+/g, ``)
+      this.url = whatsappUrl({ phone, text: this.text, isWeb: false })
+    },
+    onInput ({ number, isValid, country }) {
+      this.phone = number
+      this.changeWhatsappUrl(number)
+    },
     changeUrl () {
       let hasCode = this.phone.length > 11
       let phone = `${ (!hasCode) ? this.code : '' }${this.phone.replace('+', '')}`
-
-      phone = phone.replace(' ', '')
-
-      this.url = whatsappUrl({ phone, text: this.text, isWeb: false })
+      this.changeWhatsappUrl(phone)
     }
   }
 }

@@ -15,10 +15,14 @@ export default {
 <style lang="stylus" scoped>
 nav
   margin-bottom 1.25rem /* 20/16 */
-  border-bottom: .0625rem /* 1/16 */ solid rgba(#333, .1)
+  border-top .3125rem /* 5/16 */ solid #42b983
+  border-bottom .0625rem /* 1/16 */ solid rgba(#42b983, .2)
   text-align center
 div
-  padding 1.875rem /* 30/16 */
+  padding 1.875rem /* 30/16 */ .9375rem /* 15/16 */
+  max-width 22.5rem
+  margin-right auto
+  margin-left auto
 a
   font-weight bold
   color #2c3e50
