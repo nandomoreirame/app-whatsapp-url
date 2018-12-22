@@ -38,8 +38,11 @@ export default {
   },
   methods: {
     changeUrl () {
-      const hasCode = this.phone.length > 11
-      const phone = `${ (!hasCode) ? this.code : '' }${this.phone.replace('+', '')}`
+      let hasCode = this.phone.length > 11
+      let phone = `${ (!hasCode) ? this.code : '' }${this.phone.replace('+', '')}`
+
+      phone = phone.replace(' ', '')
+
       this.url = whatsappUrl({ phone, text: this.text, isWeb: false })
     }
   }
