@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     changeWhatsappUrl (phoneNumber) {
-      const phone = phoneNumber.replace(/\s+/g, ``)
+      const phone = phoneNumber.replace(/\D+/g, ``)
       this.url = whatsappUrl({ phone, text: this.text, isWeb: false })
     },
     onInput ({ number, isValid, country }) {
