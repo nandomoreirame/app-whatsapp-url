@@ -1,8 +1,8 @@
 <template>
   <nav>
     <div>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/" v-if="$route.path !== '/'">← Voltar </router-link>
+      <router-link to="/about">Sobre o WhatsApp URL</router-link>
     </div>
   </nav>
 </template>
