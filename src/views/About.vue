@@ -3,7 +3,7 @@
     <page-header :pageTitle="`Sobre o projeto`"/>
 
     <h3>O que é?</h3>
-    <p><strong>WhatsApp URL</strong> é um simples WebApp desenvolvido por <a href="https://nandomoreira.me" target="_blank">nandomoreira.me</a> utilizando <a href="https://vuejs.org/" target="_blank">VueJS</a> como tecnologia e com o propósito de estudo. O código é open-source e pode ser encontrado no <a href="https://github.com/nandomoreirame/app-whatsapp-url" target="_blank">Github</a>.</p>
+    <p><strong>WhatsApp URL</strong> é um simples WebApp desenvolvido por <a href="https://nandomoreira.dev?ref=app-whatsapp-url" target="_blank">nandomoreira.dev</a> utilizando <a href="https://vuejs.org/" target="_blank">VueJS</a> como tecnologia e com o propósito de estudo. O código é open-source e pode ser encontrado no <a href="https://github.com/nandomoreirame/app-whatsapp-url" target="_blank">Github</a>.</p>
 
     <h3>Pra que?</h3>
     <p>O objetivo do <strong>WhatsApp URL</strong> é de poder enviar mensagem para um número sem ter a obrigação de adicioná-lo como contato da agenda telefônica.</p>

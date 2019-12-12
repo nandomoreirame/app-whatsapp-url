@@ -15,4 +15,4 @@ open [localhost:8080](http://localhost:8080/)
 
 ## License
 
-MIT © [Fernando Moreira](https://nandomoreira.me)
+MIT © [Fernando Moreira](https://nandomoreira.dev)
