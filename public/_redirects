@@ -1,0 +1,4 @@
+http://whatsapp-url.netlify.com/*   https://whatsapp-url.nandomoreira.dev/:splat   301!
+https://whatsapp-url.netlify.com/*  https://whatsapp-url.nandomoreira.dev/:splat   301!
+
+/*  /index.html  200
