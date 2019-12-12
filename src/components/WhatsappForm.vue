@@ -16,7 +16,6 @@
 </template>
 
 <script>
-import 'vue-tel-input/dist/vue-tel-input.css'
 import WhatsappButton from '@/components/WhatsappButton.vue'
 
 const whatsappUrl = require('whatsapp-url')
