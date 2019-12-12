@@ -1,5 +1,5 @@
 <template>
-	<div>
+  <div>
     <div class="form-group">
       <label>Telefone</label>
       <vue-tel-input v-model="phone" @onInput="onInput"/>
@@ -10,9 +10,13 @@
     </div>
     <hr/>
     <div class="form-group">
-      <whatsapp-button :url="url" text="Ok, pode enviar a mensagem"/>
+      <whatsapp-button
+        :url="url"
+        text="Ok, pode enviar a mensagem"
+        :isValid="isValid"
+      />
     </div>
-	</div>
+  </div>
 </template>
 
 <script>
@@ -23,6 +27,7 @@ const whatsappUrl = require('whatsapp-url')
 export default {
   data () {
     return {
+      isValid: false,
       code: `55`,
       phone: `41984401163`,
       urlPhone: `5541984401163`,
@@ -39,11 +44,20 @@ export default {
   methods: {
     changeWhatsappUrl (phoneNumber) {
       const phone = phoneNumber.replace(/\D+/g, ``)
+      this.isValid = true
       this.url = whatsappUrl({ phone, text: this.text, isWeb: false })
     },
     onInput ({ number, isValid, country }) {
-      this.phone = number
-      this.changeWhatsappUrl(number)
+      this.isValid = isValid
+
+      if (isValid) {
+        if (typeof number === 'object')
+          this.phone = number.input !== '' ? number.national : this.phone
+        else
+          this.phone = number
+
+        return number.input.trim() ? this.changeWhatsappUrl(number.international) : null
+      }
     },
     changeUrl () {
       let hasCode = this.phone.length > 11

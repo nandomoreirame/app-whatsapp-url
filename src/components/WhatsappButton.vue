@@ -1,5 +1,10 @@
 <template>
-  <a class="whatsappButton" :href="url" target="_blank">
+  <a
+    class="whatsappButton"
+    :class="{ isInvalid: !isValid }"
+    :href="url"
+    target="_blank"
+  >
     <whatsapp-icon/>
     {{ text }}
   </a>
@@ -11,6 +16,10 @@ import WhatsappIcon from '@/components/WhatsappIcon.vue'
 export default {
   name: 'WhatsappButton',
   props: {
+    'isValid': {
+      type: Boolean,
+      default: false
+    },
     'url': {
       type: String,
       require: true
@@ -44,6 +53,11 @@ export default {
   font-weight 700
   text-decoration none
   font-size inherit
+
+  &.isInvalid
+    pointer-events none
+    cursor not-allowed
+    opacity .65
 
   &:focus,
   &:hover
