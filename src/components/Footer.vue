@@ -2,7 +2,7 @@
   <footer>
     <small>
       <span>♥</span> <a href="https://github.com/nandomoreirame/app-whatsapp-url" target="_blank">Open source</a> ⏤
-      <span>by</span> <a href="https://nandomoreira.me" target="_blank">nandomoreira.me</a>
+      <span>by</span> <a href="https://nandomoreira.dev?ref=app-whatsapp-url" target="_blank">nandomoreira.dev</a>
     </small>
   </footer>
 </template>
